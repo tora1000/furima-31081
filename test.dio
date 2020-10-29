@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 <mxfile host="65bd71144e" modified="2020-10-29T06:58:01.189Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="S-0C8LzElFUl_f9J1YLK">
     <diagram id="iB8dz6vQuwcSJ1COgBat" name="ページ1">
         <mxGraphModel dx="795" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+=======
+
+<mxfile host="65bd71144e" modified="2020-10-29T03:19:28.838Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="jzMpo4-aQOlZ7gkg8z-P">
+    <diagram id="iB8dz6vQuwcSJ1COgBat" name="ページ1">
+        <mxGraphModel dx="618" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+
+>>>>>>> d9fc879abeadc84c71cce8bab9bc524d0024e0ca
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>

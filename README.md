@@ -1,5 +1,6 @@
 ## users テーブル
 
+
 | Column             | Type        | Options      |
 | ------------------ | ----------- | ------------ |
 | nickname           | string      | null: false  |
@@ -18,7 +19,9 @@
 - has_many :user_products
 
 
+
 ## products テーブル
+
 
 | Column          | Type        | Options                       |
 | --------------- | ----------- | ----------------------------- |
