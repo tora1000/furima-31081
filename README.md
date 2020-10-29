@@ -13,9 +13,9 @@
 
 ### Association
 
-- has_many :products, through: users_products
+- has_many :products
 - has_many :comments
-- has_one  :shipping_address
+- has_many :user_products
 
 
 ## products テーブル
@@ -34,9 +34,9 @@
 
 ### Association
 
-- belongs_to :user, through: users_products
+- belongs_to :user
 - has_many   :comments
-
+- has_one    :user_products
 
 ## comments テーブル
 
@@ -51,30 +51,29 @@
 - belongs_to :user
 - belongs_to :product
 
-## users_products テーブル
+## user_products テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | user       | references | null: false, foreign_key: true |
-| products   | references | null: false, foreign_key: true |
+| product    | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
 - belongs_to :product
+- has_one    :shipping_address
 
 ## shipping_address テーブル
 
-| Column           | Type        | Options                       |
-| ---------------  | ----------- | ----------------------------- |
-| post_number      | integer     | null: false                   |
-| prefecture       | text        | null: false                   |
-| city             | text        | null: false                   |
-| address          | integer     | null: false                   |
-| address_building | text        |                               | 
-| phone_number     | integer     | null: false                   |
-| user             | references  | null: false, foreign_key:true |
+| Column            | Type        | Options                       |
+| ----------------- | ----------- | ----------------------------- |
+| post_number       | string      | null: false                   |
+| prefecture_id     | string      | null: false                   |
+| city              | string      | null: false                   |
+| address           | string      | null: false                   |
+| address_building  | string      |                               | 
+| phone_number      | string      | null: false                   |
+| user_product      | references  | null: false, foreign_key:true |
 
-### Association
-
-- has_one :user
+- has_one :user_product
