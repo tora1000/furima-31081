@@ -15,7 +15,7 @@
 
 - has_many :products, through: users_products
 - has_many :comments
-- has_one  :shipping_adress
+- has_one  :shipping_address
 
 
 ## products テーブル
@@ -63,7 +63,7 @@
 - belongs_to :user
 - belongs_to :product
 
-## shipping_adress テーブル
+## shipping_address テーブル
 
 | Column           | Type        | Options                       |
 | ---------------  | ----------- | ----------------------------- |
