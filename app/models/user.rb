@@ -6,7 +6,7 @@ class User < ApplicationRecord
   
     with_options presence: true do
     validates :name         
-    validates :email, format: {with: /\}
+    validates :email, format: {with: /q\}
     validates :encrypted_password
     validates :first_name
     validates :last_name 
