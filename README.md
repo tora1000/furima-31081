@@ -14,13 +14,13 @@
 
 ### Association
 
-- has_many :products
+- has_many :items
 - has_many :comments
-- has_many :user_products
+- has_many :user_items
 
 
 
-## products テーブル
+## items テーブル
 
 
 | Column             | Type        | Options                       |
@@ -39,7 +39,7 @@
 
 - belongs_to :user
 - has_many   :comments
-- has_one    :user_products
+- has_one    :user_items
 
 ## comments テーブル
 
@@ -47,24 +47,24 @@
 | ---------- | ----------- | ----------------------------- |
 | text       | text        | null: false                   |
 | user       | references  | null: false, foreign_key:true |
-| prototype  | references  | null: false, foreign_key:true |
+| item       | references  | null: false, foreign_key:true |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :product
+- belongs_to :item
 
-## user_products テーブル
+## user_items テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | user       | references | null: false, foreign_key: true |
-| product    | references | null: false, foreign_key: true |
+| item       | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :product
+- belongs_to :item
 - has_one    :shipping_address
 
 ## shipping_address テーブル
@@ -79,4 +79,4 @@
 | phone_number      | string      | null: false                   |
 | user_product      | references  | null: false, foreign_key:true |
 
-- has_one :user_product
+- has_one :user_item
