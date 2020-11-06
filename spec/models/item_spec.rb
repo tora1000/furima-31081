@@ -34,7 +34,7 @@ describe Item do
     end
 
     it 'category_idが1では出品できない' do
-      @item.category_id = "1"
+      @item.category_id = 1
       @item.valid?
       expect(@item.errors.full_messages).to include("Category must be other than 1")
     end
