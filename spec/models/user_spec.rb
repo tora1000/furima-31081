@@ -93,31 +93,31 @@ describe User do
         @user.valid?
         expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
       end
-      it 'first_nameが空だとと登録できない' do
+      it 'first_nameが空だと登録できない' do
         @user.first_name = nil
         @user.valid?
         expect(@user.errors.full_messages).to include("First name can't be blank")
       end
 
-      it 'last_nameが空だとと登録できない' do
+      it 'last_nameが空だと登録できない' do
         @user.last_name = nil
         @user.valid?
         expect(@user.errors.full_messages).to include("Last name can't be blank")
       end
 
-      it 'first_name_kanaが空だとと登録できない' do
+      it 'first_name_kanaが空だと登録できない' do
         @user.first_name_kana = nil
         @user.valid?
         expect(@user.errors.full_messages).to include("First name kana can't be blank")
       end
 
-      it 'last_name_kanaが空だとと登録できない' do
+      it 'last_name_kanaが空だと登録できない' do
         @user.last_name_kana = nil
         @user.valid?
         expect(@user.errors.full_messages).to include("Last name kana can't be blank")
       end
 
-      it 'birthdayが空だとと登録できない' do
+      it 'birthdayが空だと登録できない' do
         @user.birthday = nil
         @user.valid?
         expect(@user.errors.full_messages).to include("Birthday can't be blank")
