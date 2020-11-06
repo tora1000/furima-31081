@@ -33,7 +33,7 @@
 | prefecture_id      | integer     | null: false                   |
 | shipping_day_id    | integer     | null: false                   | 
 | price              | integer     | null: false                   |
-| user               | references  | null: false, foreign_key:true |
+| user               | references  | foreign_key:true              |
 
 ### Association
 
@@ -46,8 +46,8 @@
 | Column     | Type        | Options                       |
 | ---------- | ----------- | ----------------------------- |
 | text       | text        | null: false                   |
-| user       | references  | null: false, foreign_key:true |
-| item       | references  | null: false, foreign_key:true |
+| user       | references  | foreign_key: true              |
+| item       | references  | foreign_key: true              |
 
 ### Association
 
@@ -58,8 +58,8 @@
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
-| user       | references | null: false, foreign_key: true |
-| item       | references | null: false, foreign_key: true |
+| user       | references | foreign_key: true              |
+| item       | references | foreign_key: true              |
 
 ### Association
 
@@ -77,6 +77,6 @@
 | address           | string      | null: false                   |
 | address_building  | string      |                               | 
 | phone_number      | string      | null: false                   |
-| user_product      | references  | null: false, foreign_key:true |
+| user_product      | references  | foreign_key:true              |
 
 - has_one :user_item
