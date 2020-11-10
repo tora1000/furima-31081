@@ -16,7 +16,7 @@
 
 - has_many :items
 - has_many :comments
-- has_many :user_items
+- has_many :orders
 
 
 
@@ -39,7 +39,7 @@
 
 - belongs_to :user
 - has_many   :comments
-- has_one    :user_items
+- has_one    :orders
 
 ## comments テーブル
 
@@ -54,7 +54,7 @@
 - belongs_to :user
 - belongs_to :item
 
-## user_items テーブル
+## orders テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
@@ -79,4 +79,4 @@
 | phone_number      | string      | null: false                   |
 | user_product      | references  | foreign_key:true              |
 
-- has_one :user_item
+- has_one :order
