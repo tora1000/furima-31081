@@ -29,9 +29,9 @@
 | description        | text        | null: false                   |
 | category_id        | integer     | null: false                   |
 | status_id          | integer     | null: false                   |
-| shipping_id        | integer     | null: false                   | 
+| shipping_id        | integer     | null: false                   |
 | prefecture_id      | integer     | null: false                   |
-| shipping_day_id    | integer     | null: false                   | 
+| shipping_day_id    | integer     | null: false                   |
 | price              | integer     | null: false                   |
 | user               | references  | foreign_key:true              |
 
@@ -77,6 +77,6 @@
 | address           | string      | null: false                   |
 | address_building  | string      |                               | 
 | phone_number      | string      | null: false                   |
-| user_product      | references  | foreign_key:true              |
+| order             | references  | foreign_key:true              |
 
 - has_one :order
