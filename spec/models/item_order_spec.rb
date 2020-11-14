@@ -66,5 +66,10 @@ RSpec.describe ItemOrder, type: :model do
       @item_order.valid?
       expect(@item_order.errors.full_messages).to include("Token can't be blank")
     end
+
+    it 'address_buildingが空でも保存できること' do
+      @item_order.address_building = ''
+      expect(@item_order).to be_valid
+    end
   end
 end
