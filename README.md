@@ -39,7 +39,7 @@
 
 - belongs_to :user
 - has_many   :comments
-- has_one    :orders
+- has_one    :order
 
 ## comments テーブル
 
