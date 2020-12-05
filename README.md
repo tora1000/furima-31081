@@ -1,3 +1,11 @@
+### URL
+https://furima-31081.herokuapp.com/
+
+### ID,Password
+ID tora
+Password 1000
+
+
 ## users テーブル
 
 
